@@ -1,3 +1,3 @@
-# Projeto Dashboard Responsivo
+# Portfolio
 
-Um projeto bem simples, fiz em pouco tempo para treinar um pouco minhas skills de Front-end.
+Esse é meu portfolio de projetos pessoais, trabalhos dos cursos e faculdade.
