@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Dashboard Resposivo usando HTML CSS e JavaScript</title>
+
+        <!-- MATERIAL CDN -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
+
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="./style.css">
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- INICIO DA ASIDE -->
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="./Image/Logo guizeus.png" alt="logo">
+                        <h2>GUI<span class="purple">ZEUS</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-symbols-sharp">close</span>
+                    </div>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="sidebar">
+                    <a href="#" class="active">
+                        <span class="material-symbols-sharp">dashboard</span>
+                        <h3>Dashboard</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">person</span>
+                        <h3>Costumidores</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">receipt_long</span>
+                        <h3>Vendas</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">insights</span>
+                        <h3>Análise</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">mail</span>
+                        <h3>Mensagens</h3>
+                        <span class="message-count">28</span>
+                    <a href="#">
+                        <span class="material-symbols-sharp">inventory</span>
+                        <h3>Produtos</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">report</span>
+                        <h3>Reportes</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">settings</span>
+                         <h3>Configuração</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">add</span>
+                        <h3>Adicionar Produto</h3>
+                    <a href="#">
+                        <span class="material-symbols-sharp">logout</span>
+                        <h3>Logout</h3>                                                                                                                                                                                                        
+                    </a>
+                </div>
+            </aside>
+            <!-- FIM DA ASIDE-->
+
+            <main>
+                <h1>Dashboard</h1>
+
+                <!-- DATA -->
+                <div class="date">
+                    <input type="date">
+                </div>
+
+                <!-- INSGHTS -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-symbols-sharp">analytics</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Venda Total</h3>
+                                <h1>$25,024</h1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>81%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">Ultimas 24 Horas</small>
+                    </div>
+
+                    <!-- Fim do EXPENSES -->
+                    <div class="Expenses">
+                        <span class="material-symbols-sharp">bar_chart</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Custo Total</h3>
+                                <h1>$14,160</h1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>62%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">Ultimas 24 Horas</small>
+                    </div>
+
+                    <!-- INCOME -->
+                    <div class="income">
+                        <span class="material-symbols-sharp">stacked_line_chart</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Renda Total</h3>
+                                <h1>$10,864</h1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>44%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">Ultimas 24 Horas</small>
+                    </div>
+
+                </div>
+
+                <!-- RECENT ORDER -->
+                <div class="recent-order">
+                    <h2>VENDAS RECENTES</h2>
+                    <table>
+                        <thead>
+                            <th>Nome do Produto</th>
+                            <th>Numero do Produto</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <!--tr>
+                                <td>Vinho do Porto</td>
+                                <td>85631</td>
+                                <td>Parcelado</td>
+                                <td class="warning">Pendente</td>
+                                <td class="primary">Detalhes</td>
+                            </tr-->
+                        </tbody>
+                    </table>
+                    <a href="#">Mostrar Tudo</a>
+                </div>
+            </main> 
+
+            <!-- PERFIL E RIGHT-->
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-symbols-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler">
+                        <span class="material-symbols-sharp active">light_mode</span>
+                        <span class="material-symbols-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey, <b>Guilherme</b></p>
+                            <small class="text-muted">Adm</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./Image/photo-profile.jpg" alt="Foto Perfil">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RECENT UPDATES -->
+                <div class="recent-updates">
+                    <h2>Update Recentes</h2>
+                    <div class="updates">
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="./Image/photo-profile01.jpg" alt="Foto Perfil">
+                            </div>
+                            <div class="message">
+                                <p><b>Sara Rodrigues</b> Recebi hoje meu Whisky Old Parr, bora beber</p>
+                                <small class="text-muted">2 Minutos Atrás</small>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="./Image/photo-profile02.jpg" alt="Foto Perfil">
+                            </div>
+                            <div class="message">
+                                <p><b>Douglas Duarte</b> Pedi devolução do meu kit de Especiarias, mas recusaram</p>
+                                <small class="text-muted">8 Minutos Atrás</small>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="./Image/photo-profile01.jpg" alt="Foto Perfil">
+                            </div>
+                            <div class="message">
+                                <p><b>Maria do Santos</b> Black friday de drinks, nem perdi tempo e comprei meu Vinho do Porto</p>
+                                <small class="text-muted">12 Minutos Atrás</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SALES ANALYTICS -->
+                    <div class="sales-analytics">
+                        <h2>Análise de Vendas</h2>
+                        <div class="item online">
+                            <div class="icon">
+                                <span class="material-symbols-sharp">shopping_cart</span>
+                            </div>
+                            <div class="right">
+                                <div class="info">
+                                    <h3>PEDIDOS ONLINE</h3>
+                                    <small class="text-muted">Ultimas 24 Horas</small>
+                                </div>
+                                <h3 class="success">+39%</h3>
+                                <h3>3849</h3>
+                            </div>
+                        </div>
+                        <div class="item offline">
+                            <div class="icon">
+                                <span class="material-symbols-sharp">local_mall</span>
+                            </div>
+                            <div class="right">
+                                <div class="info">
+                                    <h3>PEDIDOS OFFLINE</h3>
+                                    <small class="text-muted">Ultimas 24 Horas</small>
+                                </div>
+                                <h3 class="danger">-17%</h3>
+                                <h3>1100</h3>
+                            </div>
+                        </div>
+                        <div class="item customers">
+                            <div class="icon">
+                                <span class="material-symbols-sharp">person</span>
+                            </div>
+                            <div class="right">
+                                <div class="info">
+                                    <h3>NOVOS CLIENTES</h3>
+                                    <small class="text-muted">Ultimas 24 Horas</small>
+                                </div>
+                                <h3 class="success">+25%</h3>
+                                <h3>849</h3>
+                            </div>
+                        </div>
+                        <div class="item add-product">
+                            <div>
+                                <span class="material-symbols-sharp">add</span>
+                                <h3>Adicionar Produto</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPT .JS -->
+        <script src="./orders.js"></script>
+        <script src="./index.js"></script>
+
+    </body>
+</html>
