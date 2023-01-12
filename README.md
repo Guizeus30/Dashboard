@@ -1,3 +1,3 @@
-# Portfolio
+# Dashbord Reponsivo
 
-Esse é meu portfolio de projetos pessoais, trabalhos dos cursos e faculdade.
+Esse é um pequeno projeto que fiz de front-end para treinar minhas habilidades.
